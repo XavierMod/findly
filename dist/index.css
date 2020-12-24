@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:800');
+
+
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        font-weight: 100;
+    }
+
+    .clr-flt {
+        clear: both;
+    } 
+
+    .btn {
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        font-weight: 700;
+        font-size: 12px;
+        margin: 0px 10px;
+        cursor: pointer;
+        transition: all 0.13s ease;
+    }
+
+    .btn:hover {
+        box-shadow: 1px 1px 20px rgba(210, 210, 210, 0.2);
+    }
+
+    .main-container {
+        /* border: 1px solid red; */
+        display: block;
+        margin: auto;
+        max-width: 1000px;
+        padding: 10px;
+        text-align: center;
+    }
+
+/* Header */
+
+.header {
+    height: 300px;
+    /* border: 1px solid red; */
+    background: url("/_assets/bg.png");
+    background-size: cover;
+    position: relative;
+}
+
+.header #findly-logo {
+    width: 90px;
+    position: absolute;
+    right: 140px;
+    bottom: 150px;
+}
+
+/* Searcher */
+
+.searcher {
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: -30px;
+}
+
+.searcher #main-searcher {
+    display: block;
+    margin: auto;
+    width: 400px;
+    padding: 13px;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    box-shadow: 1px 1px 30px rgba(148, 148, 148, 0.2);
+    border: none;
+    outline: none;
+}
+
+/* Song-found-module */
+
+.song-found-module {
+    /* border: 1px solid red; */
+    display: block;
+    margin-bottom: 20px;
+}
+
+.song-found-module #found-title {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.song-found-module .song-block {
+    display: block;
+    margin: auto;
+    max-width: 900px;
+    border-radius: 4px;
+    background-color: rgb(249, 249, 249);
+    padding: 30px;
+    overflow: auto;
+}
+
+.song-found-module .song-block .info-song {
+    /* border: 1px solid red; */
+    float: left;
+}
+
+.song-found-module .song-block .info-song .artist-pic {
+    width: 40px;
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+
+.song-found-module .song-block .inner-text {
+    font-size: 10px;
+    font-weight: 700;
+    float: right;
+    margin-left: 10px;
+}
+
+.song-found-module .song-block .inner-text h1 {
+    font-weight: 700;
+}
+
+.song-found-module .song-block .inner-text p {
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.song-found-module .song-block .btns-container {
+    float: right;
+}
+
+/* Main section */
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+.main-section .title-section {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px; 
+    text-align: left;
+}
+
+.lyric-block {
+    /* border: 1px solid blue; */
+    display: inline-block;
+    padding: 20px;
+    box-shadow: 1px 1px 30px rgba(148, 148, 148, 0.2);
+    border-radius: 10px;
+    margin-right: 20px;
+    position: relative;
+    width: 300px;
+    overflow: auto;
+    margin: 10px;
+    transition: all 0.23s ease;
+}
+
+.lyric-block .bookmark-logo {
+    /* border: 1px solid red; */
+    position: absolute;
+    right: 20px;
+}
+
+.lyric-block .lyric-search {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 30px 0px 30px 0px;
+}
+
+.lyric-block .lyric-search-info-song {
+    /* border: 1px solid red; */
+    background-color: rgb(249, 249, 249);
+    overflow: auto;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.lyric-block .lyric-search-info-song .lyric-search-artist-pic {
+    width: 35px;
+    float: left;
+}
+
+.lyric-block .lyric-search-info-song .lyric-search-inner-text {
+    margin-left: 50px;
+}
+
+.lyric-block .lyric-search-info-song .lyric-search-inner-text p {
+    font-size: 10px;
+}
+
+.lyric-block .lyric-search-info-song .lyric-search-inner-text .lyric-search-band-name {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.lyric-block button {
+    /* border: 1px solid red; */
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    border: 0.4px solid rgb(222, 222, 222);
+}
+
+.lyric-block button:hover {
+    box-shadow: none;
+    border-radius: 20px;
+}
+
+/* Footer */
+
+.footer {
+    font-size: 6px;
+    margin: 30px;
+}
+
+.footer #footer-title {
+    font-weight: 700;
+}
+
+/* Lyrics popup */
+
+.lyrics-popup {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+.lyrics-popup .popup-container {
+    background-color: white;
+    display: block;
+    margin: auto;
+    width: 800px;
+    border-radius: 5px;
+    padding: 40px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.lyrics-popup .close {
+    /* border: 1px solid red; */
+    position: absolute;
+    right: 20px;
+    width: 10px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.loader img {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation: spin 1s linear infinite;
+    width: 50px;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
+
+
+
+
+
+
+
